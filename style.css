@@ -254,7 +254,7 @@ p{
 h1{
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
+    font-size: 32px;
 }
 
 .row{
@@ -264,7 +264,7 @@ h1{
     margin-left: -15px;
 }
 .row{
-    margin-bottom: 1rem;
+    margin-bottom: 16px; /*1 rem*/
 }
 
 [class*="col-"]{
@@ -274,24 +274,78 @@ h1{
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid darkslategrey;
-    background-color: deepskyblue;
+    background-color: deepskyblue; 
+    /*display: flex;*/
 }
 
 .pull-left{
     float: left;
-    height: 30px;
-    width: 30px;
-    border: 1px solid;
-    padding: 5px;
-    margin: 5px;
 }
 
 .pull-right{
     float: right;
-    height: 30px;
-    width: 30px;
-    border: 1px solid;
-    padding: 5px;
-    margin: 5px;
 }
 
+.clearfix{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.square{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    margin: 3px;
+}
+.square1{
+    height: 60px;
+    width: 60px;
+    border: 1px solid;
+    margin: 1px;
+}
+.square2{
+    height: 50px;
+    width: 90px;
+    border: 1px solid;
+    margin: 2px;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.y-center{
+    align-items: center;
+}
+
+.x-start{
+    align-items: flex-start;
+}
+
+.x-end{
+    align-items: flex-end;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
