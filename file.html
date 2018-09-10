@@ -8,12 +8,10 @@
     </head>
     <body>
         <div class="container">
-            <h1>Something something</h1>
-            <div class="row">
-                <div class="col-sm-4"><p>col-sm-4</p></div>
-                <div class="col-sm-4"><p>col-sm-4</p></div>
-                <div class="col-sm-4"><p>col-sm-4</p></div>
-            </div>
+            <h1>Heading</h1>
+
+            
+            <h2>Here are examples of classes col-md-i, col-sm-i, col-lg-i</h2>
             <div class="row">
                     <div class="col-md-4"><p>col-md-4</p></div>
                     <div class="col-md-4"><p>col-md-4</p></div>
@@ -29,7 +27,11 @@
                         <div class="col-sm-6"><p>col-sm-6</p></div>
                 </div>
                 <div class="row">
-                        <div class="col-sm-1"><div class="square"></div></div>
+                                <div class="col-lg-6"><p>col-lg-6</p></div>
+                                <div class="col-lg-6"><p>col-lg-6</p></div>
+                        </div>
+                <div class="row">
+                        <div class="col-sm-1"></div>
                         <div class="col-sm-1"><p>col-sm-1</p></div>
                         <div class="col-sm-1"><p>col-sm-1</p></div>
                         <div class="col-sm-1"><p>col-sm-1</p></div>
@@ -65,21 +67,58 @@
                         <div class="col-sm-9"><p>col-sm-9</p></div>
                         <div class="col-sm-3"><p>col-sm-3</p></div>
                 </div>
-
+                 <h2>Here are results of work some classes using Flex technology</h2>
+                 <h3>1) flex, x-start, space-between, x-end, y-center</h3>
+                 <div class="row">
+                        <div class="col-sm-4 flex space-between x-start y-center">
+                                <div class="square3"></div><div class="square"></div>
+                        </div>
+                        <div class="col-sm-4 flex space-between space-between y-center">
+                                <div class="square3"></div>
+                                <div class="square"></div>
+                        </div>
+                        <div class="col-sm-4 flex space-between x-end y-center">
+                                <div class="square3"></div>
+                                <div class="square"></div>
+                        </div>
+                    </div>
+                    <h3>2) flex, y-center, space-between</h3>
+                    <div class="row">
+                            <div class="col-md-12 flex y-center space-between">
+                                    <div class="square flex y-center">
+                                            <div class="square4"></div>
+                                            <div class="square4"></div>
+                                            <div class="square4"></div>
+                                    </div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square3"></div>
+                                    <div class="square2"></div>
+                            </div>
+                    </div>   
+                <h3>3) float, clearfix</h3>    
                 <div class="row">
-                        <div class="col-sm-5">
-                                <div class="square flex pull-right"></div>
-                                <div class="square flex pull-right"></div>
+                       <div class="col-lg-12">
+                                <div class="square pull-right"></div>
+                                <div class="square pull-right"></div>
                                 <div class="square clearfix"></div>
-                                <div class="square clearfix"></div>
-                                
-                        </div>
-                        <div class="col-sm-2 flex y-center space-between">
                                 <div class="square"></div>
-                                <div class="square"></div>
-                        </div>
-                        <div class="col-sm-5 text-left"><p>col-sm-5</p></div>
+                                <div class="square pull-left"></div>
+                                <div class="square pull-left"></div>
+                       </div>
                 </div>
+                <h3>4) flex, flex-column, y-center</h3>
+                <div class="row">
+                                <div class="col-lg-12 flex flex-column y-center">
+                                         <div class="square"></div>
+                                         <div class="square"></div>
+                                         <div class="square"></div>
+                                         <div class="square"></div>
+                                         <div class="square"></div>
+                                         <div class="square"></div>
+                                </div>
+                         </div>
         </div>
  
     </body>

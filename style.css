@@ -251,10 +251,19 @@ p{
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1{
+h1, h2, h3{
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
+}
+h1{
     font-size: 32px;
+}
+
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 24px;
 }
 
 .row{
@@ -264,18 +273,16 @@ h1{
     margin-left: -15px;
 }
 .row{
-    margin-bottom: 16px; /*1 rem*/
+    margin-bottom: 16px;
 }
 
 [class*="col-"]{
-    position: relative;
     width:100%;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid darkslategrey;
     background-color: deepskyblue; 
-    /*display: flex;*/
 }
 
 .pull-left{
@@ -297,18 +304,37 @@ h1{
     width: 50px;
     border: 1px solid;
     margin: 3px;
+    background-color: chartreuse;
 }
 .square1{
     height: 60px;
     width: 60px;
     border: 1px solid;
     margin: 1px;
+    background-color: darksalmon;
 }
 .square2{
     height: 50px;
     width: 90px;
     border: 1px solid;
     margin: 2px;
+    background-color: lightseagreen;
+}
+.square3{
+    height: 80px;
+    width: 80px;
+    border: 1px solid;
+    margin: 2px;
+    padding: 2px;
+    background-color: plum;
+}
+.square4{
+    height: 30px;
+    width: 30px;
+    border: 1px solid;
+    margin: 2px;
+    padding: 2px;
+    background-color: springgreen;
 }
 
 
@@ -333,11 +359,11 @@ h1{
 }
 
 .x-start{
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .x-end{
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .text-center{
