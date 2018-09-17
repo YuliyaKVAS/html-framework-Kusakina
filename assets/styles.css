@@ -1,0 +1,397 @@
+/*
+BREAKPOINTS
+*/
+/*MIXIN FOR CONTAINER WIDTH*/
+/*MIXIN FOR COLUMNS*/
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.container-margin {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-padding {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row-margin {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.x-start {
+  justify-content: flex-start;
+}
+
+.x-end {
+  justify-content: flex-end;
+}
+
+.container {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.container__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*=col-] {
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border: 1px solid darkslategrey;
+  background-color: deepskyblue;
+}
+
+/*col-sm-i classes*/
+@media only screen and (min-width: 768px) {
+  .col-sm-1 {
+    max-width: 8.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-2 {
+    max-width: 16.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-3 {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-4 {
+    max-width: 33.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-5 {
+    max-width: 41.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-6 {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-7 {
+    max-width: 58.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-8 {
+    max-width: 66.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-9 {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-10 {
+    max-width: 83.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-11 {
+    max-width: 91.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-12 {
+    max-width: 100%;
+  }
+}
+
+/*col-md-i classes*/
+@media only screen and (min-width: 992px) {
+  .col-md-1 {
+    max-width: 8.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-2 {
+    max-width: 16.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-3 {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-4 {
+    max-width: 33.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-5 {
+    max-width: 41.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-6 {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-7 {
+    max-width: 58.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-8 {
+    max-width: 66.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-9 {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-10 {
+    max-width: 83.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-11 {
+    max-width: 91.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-12 {
+    max-width: 100%;
+  }
+}
+
+/*col-lg-i classes*/
+@media only screen and (min-width: 1200px) {
+  .col-lg-1 {
+    max-width: 8.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-2 {
+    max-width: 16.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-3 {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-4 {
+    max-width: 33.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-5 {
+    max-width: 41.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-6 {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-7 {
+    max-width: 58.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-8 {
+    max-width: 66.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-9 {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-10 {
+    max-width: 83.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-11 {
+    max-width: 91.6666666667%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-12 {
+    max-width: 100%;
+  }
+}
+
+/*input
+{
+    background-color:#fff;
+    display:block;
+    margin:10px;
+    padding:8px 6px;
+    width:100px;
+}
+input[readonly]
+{
+    background-color:#ccc;
+    font-style:italic;
+}
+:disabled {
+    background-color: #f0f0f0;
+    color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+  }
+  
+  input[type="submit"] {
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:disabled:hover {
+    cursor: not-allowed;
+  }
+
+  input[type="text"]:focus{
+      background-color: lightgreen;
+  }
+  input[type="text"]:invalid{
+    background-color: red;
+}*/
+.input-simple {
+  background-color: #fff;
+  display: block;
+  margin: 10px;
+  padding: 8px 6px;
+  width: 100px;
+}
+
+.input-disabled {
+  cursor: not-allowed;
+  background-color: lightgrey;
+  display: block;
+  margin: 10px;
+  padding: 8px 6px;
+  width: 100px;
+}
+
+.square3 {
+  height: 80px;
+  width: 80px;
+  border: 1px solid;
+  margin: 2px;
+  padding: 2px;
+  background-color: plum;
+}
+
+.square {
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+  margin: 2px;
+  padding: 2px;
+  background-color: springgreen;
+}
+
+/*# sourceMappingURL=styles.css.map */

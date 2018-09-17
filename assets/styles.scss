@@ -2,3 +2,20 @@
 @import "global/index";
 @import "elements/index";
 @import "components/index";
+
+.square3{
+    height: 80px;
+    width: 80px;
+    border: 1px solid;
+    margin: 2px;
+    padding: 2px;
+    background-color: plum;
+}
+.square{
+    height: 30px;
+    width: 30px;
+    border: 1px solid;
+    margin: 2px;
+    padding: 2px;
+    background-color: springgreen;
+}
