@@ -1,0 +1,13 @@
+.radio--simple{
+    background-color: black;
+}
+.radio--focus:focus{
+    background-color: blue;
+    outline:5px solid #ffffcc;
+}
+.radio--error{
+    outline:5px solid pink;
+}
+.radio--disabled{
+    cursor: not-allowed;
+}

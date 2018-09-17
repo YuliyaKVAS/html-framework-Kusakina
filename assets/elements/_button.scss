@@ -1,0 +1,31 @@
+.button--simple{
+    background-color: beige;
+}
+.button--big{
+    background-color: beige;
+    width: 200px;
+    height:50px;
+}
+.button--small{
+    background-color: beige;
+    width:50px;
+    height:20px;
+}
+.button--primary{
+    border-radius: 5px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    box-shadow: 1px 1px 1px green;
+}
+.button--secondary{
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid green;
+    box-shadow: 1px 1px 1px lightgray;
+}
+.button--warning{
+    border-radius: 5px;
+    background-color: orange;
+    border: 1px solid orange;
+    box-shadow: 1px 1px 1px orangered;
+}

@@ -34,7 +34,7 @@ h3 {
   padding-left: 15px;
 }
 
-.row-margin {
+.container__row-margin {
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 16px;
@@ -42,6 +42,21 @@ h3 {
 
 * {
   box-sizing: border-box;
+}
+
+/*FLOATS*/
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .flex {
@@ -325,55 +340,122 @@ h3 {
   }
 }
 
-/*input
-{
-    background-color:#fff;
-    display:block;
-    margin:10px;
-    padding:8px 6px;
-    width:100px;
-}
-input[readonly]
-{
-    background-color:#ccc;
-    font-style:italic;
-}
-:disabled {
-    background-color: #f0f0f0;
-    color: #e0e0e0;
-    border: 1px solid #e0e0e0;
-  }
-  
-  input[type="submit"] {
-    font-size: 15px;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"]:disabled:hover {
-    cursor: not-allowed;
-  }
-
-  input[type="text"]:focus{
-      background-color: lightgreen;
-  }
-  input[type="text"]:invalid{
-    background-color: red;
-}*/
-.input-simple {
-  background-color: #fff;
-  display: block;
-  margin: 10px;
-  padding: 8px 6px;
-  width: 100px;
+.input--simple {
+  background-color: white;
+  border-radius: 4px;
 }
 
-.input-disabled {
+.input--disabled[type=submit] {
   cursor: not-allowed;
-  background-color: lightgrey;
-  display: block;
-  margin: 10px;
-  padding: 8px 6px;
-  width: 100px;
+}
+
+.input--readonly[type=text] {
+  pointer-events: none;
+}
+
+.input--error {
+  background-color: pink;
+  border: solid 1.5px red;
+}
+
+.input--focus:focus {
+  background-color: aquamarine;
+}
+
+.textarea--simple {
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px yellowgreen;
+}
+
+.textarea--disabled {
+  cursor: not-allowed;
+}
+
+.textarea--focus:focus {
+  background-color: aqua;
+}
+
+.textarea--readonly {
+  pointer-events: none;
+}
+
+.textarea--error {
+  background-color: pink;
+  border: solid 1.5px red;
+}
+
+.checkbox--simple {
+  background-color: black;
+}
+
+.checkbox--focus:focus {
+  background-color: blue;
+  outline: 5px solid #ffffcc;
+}
+
+.checkbox--error {
+  outline: 5px solid pink;
+}
+
+.checkbox--disabled {
+  cursor: not-allowed;
+  display: none;
+}
+
+.radio--simple {
+  background-color: black;
+}
+
+.radio--focus:focus {
+  background-color: blue;
+  outline: 5px solid #ffffcc;
+}
+
+.radio--error {
+  outline: 5px solid pink;
+}
+
+.radio--disabled {
+  cursor: not-allowed;
+}
+
+.button--simple {
+  background-color: beige;
+}
+
+.button--big {
+  background-color: beige;
+  width: 200px;
+  height: 50px;
+}
+
+.button--small {
+  background-color: beige;
+  width: 50px;
+  height: 20px;
+}
+
+.button--primary {
+  border-radius: 5px;
+  background-color: lightgreen;
+  border: 1px solid green;
+  box-shadow: 1px 1px 1px green;
+}
+
+.button--secondary {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid green;
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+.button--warning {
+  border-radius: 5px;
+  background-color: orange;
+  border: 1px solid orange;
+  box-shadow: 1px 1px 1px orangered;
 }
 
 .square3 {

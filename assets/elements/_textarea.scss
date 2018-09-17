@@ -1,0 +1,19 @@
+.textarea--simple{
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px yellowgreen;
+}
+.textarea--disabled{
+    cursor: not-allowed;
+}
+.textarea--focus:focus{
+    background-color: aqua;
+}
+.textarea--readonly{
+    pointer-events: none;
+}
+.textarea--error{
+    background-color: pink;
+    border: solid 1.5px red;
+}

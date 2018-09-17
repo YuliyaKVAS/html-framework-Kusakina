@@ -1,50 +1,21 @@
-/*input
-{
-    background-color:#fff;
-    display:block;
-    margin:10px;
-    padding:8px 6px;
-    width:100px;
-}
-input[readonly]
-{
-    background-color:#ccc;
-    font-style:italic;
-}
-:disabled {
-    background-color: #f0f0f0;
-    color: #e0e0e0;
-    border: 1px solid #e0e0e0;
-  }
-  
-  input[type="submit"] {
-    font-size: 15px;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"]:disabled:hover {
-    cursor: not-allowed;
-  }
 
-  input[type="text"]:focus{
-      background-color: lightgreen;
-  }
-  input[type="text"]:invalid{
-    background-color: red;
-}*/
-.input-simple{
-    background-color:#fff;
-    display:block;
-    margin:10px;
-    padding:8px 6px;
-    width:100px;
+.input--simple{
+    background-color: white;
+    border-radius: 4px;
 }
-.input-disabled{
+.input--disabled[type="submit"]{
     cursor: not-allowed;
-    background-color: lightgrey;
-    display:block;
-    margin:10px;
-    padding:8px 6px;
-    width:100px
+    }
+.input--readonly[type="text"]{
+    pointer-events: none;
 }
+.input--error{
+    background-color: pink;
+    border: solid 1.5px red;
+}
+.input--focus:focus{
+    background-color: aquamarine;
+}
+
+
 

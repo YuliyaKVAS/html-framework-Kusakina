@@ -1,0 +1,14 @@
+.checkbox--simple{
+    background-color: black;
+}
+.checkbox--focus:focus{
+    background-color: blue;
+    outline:5px solid #ffffcc;
+}
+.checkbox--error{
+    outline:5px solid pink;
+}
+.checkbox--disabled{
+    cursor: not-allowed;
+    display: none;
+}
