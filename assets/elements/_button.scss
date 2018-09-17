@@ -1,31 +1,42 @@
 .button--simple{
     background-color: beige;
+    border-radius: $butt-rad;
+    width:$butt-width;
+    height:$butt-height;
 }
 .button--big{
     background-color: beige;
+    border-radius: $butt-rad;
     width: 200px;
     height:50px;
 }
 .button--small{
     background-color: beige;
+    border-radius: $butt-rad;
     width:50px;
     height:20px;
 }
 .button--primary{
-    border-radius: 5px;
+    border-radius: $butt-rad;
+    width:$butt-width;
+    height:$butt-height;
     background-color: lightgreen;
     border: 1px solid green;
     box-shadow: 1px 1px 1px green;
 }
 .button--secondary{
-    border-radius: 5px;
+    border-radius: $butt-rad;
     background-color: white;
     border: 1px solid green;
     box-shadow: 1px 1px 1px lightgray;
+    width:$butt-width;
+    height:$butt-height;
 }
 .button--warning{
-    border-radius: 5px;
+    border-radius: $butt-rad;
     background-color: orange;
     border: 1px solid orange;
     box-shadow: 1px 1px 1px orangered;
+    width:$butt-width;
+    height:$butt-height;
 }

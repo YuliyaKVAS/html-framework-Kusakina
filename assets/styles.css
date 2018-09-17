@@ -1,6 +1,9 @@
 /*
 BREAKPOINTS
 */
+/*COLORS*/
+/*BUTTON PARAMETRS*/
+/*INPUT PARAMETRS*/
 /*MIXIN FOR CONTAINER WIDTH*/
 /*MIXIN FOR COLUMNS*/
 p {
@@ -342,7 +345,7 @@ h3 {
 
 .input--simple {
   background-color: white;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .input--disabled[type=submit] {
@@ -356,10 +359,12 @@ h3 {
 .input--error {
   background-color: pink;
   border: solid 1.5px red;
+  border-radius: 5px;
 }
 
 .input--focus:focus {
   background-color: aquamarine;
+  border-radius: 5px;
 }
 
 .textarea--simple {
@@ -423,22 +428,29 @@ h3 {
 
 .button--simple {
   background-color: beige;
+  border-radius: 5px;
+  width: 80px;
+  height: 20px;
 }
 
 .button--big {
   background-color: beige;
+  border-radius: 5px;
   width: 200px;
   height: 50px;
 }
 
 .button--small {
   background-color: beige;
+  border-radius: 5px;
   width: 50px;
   height: 20px;
 }
 
 .button--primary {
   border-radius: 5px;
+  width: 80px;
+  height: 20px;
   background-color: lightgreen;
   border: 1px solid green;
   box-shadow: 1px 1px 1px green;
@@ -449,6 +461,8 @@ h3 {
   background-color: white;
   border: 1px solid green;
   box-shadow: 1px 1px 1px lightgray;
+  width: 80px;
+  height: 20px;
 }
 
 .button--warning {
@@ -456,6 +470,8 @@ h3 {
   background-color: orange;
   border: 1px solid orange;
   box-shadow: 1px 1px 1px orangered;
+  width: 80px;
+  height: 20px;
 }
 
 .square3 {
