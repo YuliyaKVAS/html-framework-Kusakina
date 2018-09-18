@@ -1,30 +1,96 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*
 BREAKPOINTS
 */
 /*COLORS*/
+/*BUTTON COLORS*/
 /*BUTTON PARAMETRS*/
 /*INPUT PARAMETRS*/
 /*MIXIN FOR CONTAINER WIDTH*/
 /*MIXIN FOR COLUMNS*/
-p {
-  font-family: "Times New Roman", Times, serif;
+.input--error::-webkit-input-placeholder, .textarea--error::-webkit-input-placeholder {
+  color: #c0392b;
 }
 
-h1, h2, h3 {
-  font-weight: 500;
-  font-family: "Times New Roman", Times, serif;
+.input--error::-moz-placeholder, .textarea--error::-webkit-input-placeholder {
+  color: #c0392b;
 }
 
-h1 {
-  font-size: 32px;
+/* Firefox 19+ */
+.input--error:-moz-placeholder, .textarea--error::-webkit-input-placeholder {
+  color: #c0392b;
 }
 
-h2 {
-  font-size: 28px;
+/* Firefox 18- */
+.input--error:-ms-input-placeholder, .textarea--error::-webkit-input-placeholder {
+  color: #c0392b;
 }
 
-h3 {
-  font-size: 24px;
+.input--simple::-webkit-input-placeholder, .textarea--simple::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.input--simple::-moz-placeholder, .textarea--simple::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+/* Firefox 19+ */
+.input--simple:-moz-placeholder, .textarea--simple::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+/* Firefox 18- */
+.input--simple:-ms-input-placeholder, .textarea--simple::-webkit-input-placeholder {
+  color: lightgray;
 }
 
 .container-margin {
@@ -60,6 +126,32 @@ h3 {
   content: "";
   display: block;
   clear: both;
+}
+
+body {
+  margin: 8px;
+}
+
+input {
+  margin: 5px;
+  padding: 2px;
+}
+
+button {
+  margin: 0 auto;
+  padding: 2px;
+}
+
+textarea {
+  margin: 4px;
+  width: 90%;
+  min-height: 20%;
+}
+
+hr {
+  align-self: center;
+  width: 100%;
+  color: #c0392b;
 }
 
 .flex {
@@ -121,7 +213,8 @@ h3 {
   padding-bottom: 15px;
   padding-top: 15px;
   border: 1px solid darkslategrey;
-  background-color: deepskyblue;
+  background-color: lightcyan;
+  text-align: start;
 }
 
 /*col-sm-i classes*/
@@ -406,7 +499,6 @@ h3 {
 
 .checkbox--disabled {
   cursor: not-allowed;
-  display: none;
 }
 
 .radio--simple {
@@ -429,28 +521,26 @@ h3 {
 .button--simple {
   background-color: beige;
   border-radius: 5px;
-  width: 80px;
-  height: 20px;
+  /*width:$butt-width;
+  height:$butt-height;*/
 }
 
 .button--big {
   background-color: beige;
   border-radius: 5px;
-  width: 200px;
-  height: 50px;
+  width: 60%;
+  height: 40%;
 }
 
 .button--small {
   background-color: beige;
   border-radius: 5px;
-  width: 50px;
-  height: 20px;
+  width: 20%;
+  height: 10%;
 }
 
 .button--primary {
   border-radius: 5px;
-  width: 80px;
-  height: 20px;
   background-color: lightgreen;
   border: 1px solid green;
   box-shadow: 1px 1px 1px green;
@@ -472,6 +562,49 @@ h3 {
   box-shadow: 1px 1px 1px orangered;
   width: 80px;
   height: 20px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.label--simple {
+  color: darkblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+
+.label--error {
+  color: #c0392b;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+
+.col__container {
+  width: 100px;
+  min-height: 100px;
+  background-color: springgreen;
+  margin: 1px;
+  border: 1px solid;
 }
 
 .square3 {

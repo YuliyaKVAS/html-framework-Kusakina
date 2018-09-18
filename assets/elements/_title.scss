@@ -1,0 +1,20 @@
+p{
+    font-family: $font;
+    font-size: map-get($font-size, xsmall);
+}
+
+h1, h2, h3{
+    font-weight: 500;
+    font-family: $font;
+    margin: 2px;
+}
+h1{
+    font-size: map-get($font-size, big);
+}
+
+h2{
+    font-size: map-get($font-size, med);
+}
+h3{
+    font-size: map-get($font-size, small);
+}

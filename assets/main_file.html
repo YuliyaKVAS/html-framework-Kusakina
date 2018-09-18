@@ -9,13 +9,23 @@
     <body>
         <div class="container container-margin container-padding">
             <div class="container__row container__row-margin">
-                <div class="col-md-12 flex flex-column y-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-9 flex flex-column y-center">
+                    <h2>Please enter your details</h2>
+                    <hr>
                     <form>
-                        <p><input class="input--simple" type="text"> Your name*</p>
-                        <p><input class="input--simple" type="text"> Your e-mail*</p>
-                        <p><input class="input--error" type="text"> Password*</p>
-                        <p>Message: <br/><textarea class="textarea--focus"></textarea></p>
-                        <button class="button--primary">Send</button>
+                        <p><input class="input--simple" type="text" placeholder="Enter your real name.." id="1">
+                            <label for="1" class="label--simple">Your name*</label>
+                        </p>
+                        <p><input class="input--simple" type="text" placeholder="Enter your E-mail" id="2">
+                            <label for="2" class="label--simple">Your e-mail*</label>
+                        </p>
+                        <p><input class="input--error" type="text" placeholder="Wrong password.." id="3">
+                            <label for="3" class="label--error">Password*</label>
+                        </p>
+                        <hr>
+                        <p> Message: <br/><textarea class="textarea--simple" placeholder="Not more than 5000 characters"></textarea></p>
+                        <button class="button--primary"><p>Send Message</p></button>
                     </form>
                 </div>
             </div>

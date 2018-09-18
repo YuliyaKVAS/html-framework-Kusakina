@@ -1,0 +1,9 @@
+.input--error::-webkit-input-placeholder,.textarea--error::-webkit-input-placeholder {color:$wrong;}
+.input--error::-moz-placeholder,.textarea--error::-webkit-input-placeholder{color:$wrong;}/* Firefox 19+ */
+.input--error:-moz-placeholder,.textarea--error::-webkit-input-placeholder{color:$wrong;}/* Firefox 18- */
+.input--error:-ms-input-placeholder,.textarea--error::-webkit-input-placeholder{color:$wrong;}
+
+.input--simple::-webkit-input-placeholder,.textarea--simple::-webkit-input-placeholder{color: $simple-color;}
+.input--simple::-moz-placeholder,.textarea--simple::-webkit-input-placeholder{color: $simple-color;}/* Firefox 19+ */
+.input--simple:-moz-placeholder,.textarea--simple::-webkit-input-placeholder{color: $simple-color;}/* Firefox 18- */
+.input--simple:-ms-input-placeholder,.textarea--simple::-webkit-input-placeholder{color: $simple-color;}

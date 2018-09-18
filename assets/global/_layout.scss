@@ -28,3 +28,28 @@
     display: block;
     clear:both;
 }
+
+body{
+    margin: 8px;
+}
+
+input{
+    margin: 5px;
+    padding: 2px;
+}
+
+button{
+    margin: 0 auto;
+    padding: 2px;
+}
+
+textarea{
+    margin: 4px;
+    width: 90%;
+    min-height: 20%;
+}
+hr{
+    align-self:center;
+    width: 100%;
+    color: $wrong;
+}
