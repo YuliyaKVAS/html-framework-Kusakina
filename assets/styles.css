@@ -57,56 +57,67 @@ BREAKPOINTS
 /*INPUT PARAMETRS*/
 /*MIXIN FOR CONTAINER WIDTH*/
 /*MIXIN FOR COLUMNS*/
-.input--error::-webkit-input-placeholder, .textarea--error::-webkit-input-placeholder {
+.input--error::-webkit-input-placeholder,
+.textarea--error::-webkit-input-placeholder {
   color: #c0392b;
 }
 
-.input--error::-moz-placeholder, .textarea--error::-webkit-input-placeholder {
+.input--error::-moz-placeholder,
+.textarea--error::-webkit-input-placeholder {
   color: #c0392b;
 }
 
 /* Firefox 19+ */
-.input--error:-moz-placeholder, .textarea--error::-webkit-input-placeholder {
+.input--error:-moz-placeholder,
+.textarea--error::-webkit-input-placeholder {
   color: #c0392b;
 }
 
 /* Firefox 18- */
-.input--error:-ms-input-placeholder, .textarea--error::-webkit-input-placeholder {
+.input--error:-ms-input-placeholder,
+.textarea--error::-webkit-input-placeholder {
   color: #c0392b;
 }
 
-.input--simple::-webkit-input-placeholder, .textarea--simple::-webkit-input-placeholder {
+.input--simple::-webkit-input-placeholder,
+.textarea--simple::-webkit-input-placeholder {
   color: lightgray;
 }
 
-.input--simple::-moz-placeholder, .textarea--simple::-webkit-input-placeholder {
+.input--simple::-moz-placeholder,
+.textarea--simple::-webkit-input-placeholder {
   color: lightgray;
 }
 
 /* Firefox 19+ */
-.input--simple:-moz-placeholder, .textarea--simple::-webkit-input-placeholder {
+.input--simple:-moz-placeholder,
+.textarea--simple::-webkit-input-placeholder {
   color: lightgray;
 }
 
 /* Firefox 18- */
-.input--simple:-ms-input-placeholder, .textarea--simple::-webkit-input-placeholder {
+.input--simple:-ms-input-placeholder,
+.textarea--simple::-webkit-input-placeholder {
   color: lightgray;
 }
 
-.container-margin {
+.container {
   margin-right: auto;
   margin-left: auto;
-}
-
-.container-padding {
   padding-right: 15px;
   padding-left: 15px;
 }
-
-.container__row-margin {
+.container__row {
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 16px;
+}
+
+[class*=col-] {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 * {
@@ -132,18 +143,18 @@ body {
   margin: 8px;
 }
 
-input {
-  margin: 5px;
+.input {
+  margin: 10px;
   padding: 2px;
 }
 
-button {
-  margin: 0 auto;
+.button {
+  margin: 5px auto;
   padding: 2px;
 }
 
-textarea {
-  margin: 4px;
+.textarea {
+  margin: 6px;
   width: 90%;
   min-height: 20%;
 }
@@ -208,13 +219,8 @@ hr {
 [class*=col-] {
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-top: 15px;
   border: 1px solid darkslategrey;
   background-color: lightcyan;
-  text-align: start;
 }
 
 /*col-sm-i classes*/
@@ -436,9 +442,13 @@ hr {
   }
 }
 
+.input {
+  width: 16em;
+  border-radius: 5px;
+}
+
 .input--simple {
   background-color: white;
-  border-radius: 5px;
 }
 
 .input--disabled[type=submit] {
@@ -452,12 +462,10 @@ hr {
 .input--error {
   background-color: pink;
   border: solid 1.5px red;
-  border-radius: 5px;
 }
 
 .input--focus:focus {
   background-color: aquamarine;
-  border-radius: 5px;
 }
 
 .textarea--simple {
@@ -486,11 +494,13 @@ hr {
 
 .checkbox--simple {
   background-color: black;
+  cursor: pointer;
 }
 
 .checkbox--focus:focus {
   background-color: blue;
   outline: 5px solid #ffffcc;
+  cursor: pointer;
 }
 
 .checkbox--error {
@@ -518,55 +528,49 @@ hr {
   cursor: not-allowed;
 }
 
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .button--simple {
   background-color: beige;
-  border-radius: 5px;
-  /*width:$butt-width;
-  height:$butt-height;*/
 }
 
 .button--big {
   background-color: beige;
-  border-radius: 5px;
   width: 60%;
   height: 40%;
 }
 
 .button--small {
   background-color: beige;
-  border-radius: 5px;
   width: 20%;
   height: 10%;
 }
 
 .button--primary {
-  border-radius: 5px;
   background-color: lightgreen;
   border: 1px solid green;
   box-shadow: 1px 1px 1px green;
 }
 
 .button--secondary {
-  border-radius: 5px;
   background-color: white;
   border: 1px solid green;
   box-shadow: 1px 1px 1px lightgray;
-  width: 80px;
-  height: 20px;
 }
 
 .button--warning {
-  border-radius: 5px;
   background-color: orange;
   border: 1px solid orange;
   box-shadow: 1px 1px 1px orangered;
-  width: 80px;
-  height: 20px;
 }
 
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
+  /*text-align: center;*/
 }
 
 h1, h2, h3 {
@@ -587,42 +591,23 @@ h3 {
   font-size: 24px;
 }
 
-.label--simple {
-  color: darkblue;
+.label {
   font-family: "Times New Roman", Times, serif;
   font-size: 22px;
+}
+
+.label--simple {
+  color: darkblue;
 }
 
 .label--error {
   color: #c0392b;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-}
-
-.col__container {
-  width: 100px;
-  min-height: 100px;
-  background-color: springgreen;
-  margin: 1px;
-  border: 1px solid;
-}
-
-.square3 {
-  height: 80px;
-  width: 80px;
-  border: 1px solid;
-  margin: 2px;
-  padding: 2px;
-  background-color: plum;
 }
 
 .square {
-  height: 30px;
-  width: 30px;
-  border: 1px solid;
-  margin: 2px;
-  padding: 2px;
-  background-color: springgreen;
+  background-color: lightyellow;
+  margin: auto;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

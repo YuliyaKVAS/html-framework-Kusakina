@@ -1,16 +1,23 @@
-.container-margin{
+.container{
     margin-right: auto;
     margin-left: auto;
-}
-.container-padding{
     padding-right: 15px;
     padding-left: 15px;
-}
-.container__row-margin{
+
+    &__row{
     margin-right: -15px;
     margin-left: -15px;
     margin-bottom: 16px;
+    }
 }
+
+[class*="col-"]{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -33,18 +40,18 @@ body{
     margin: 8px;
 }
 
-input{
-    margin: 5px;
+.input{
+    margin: 10px;
     padding: 2px;
 }
 
-button{
-    margin: 0 auto;
+.button{
+    margin: 5px auto;
     padding: 2px;
 }
 
-textarea{
-    margin: 4px;
+.textarea{
+    margin: 6px;
     width: 90%;
     min-height: 20%;
 }

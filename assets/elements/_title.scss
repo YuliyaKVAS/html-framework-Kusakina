@@ -1,6 +1,7 @@
 p{
     font-family: $font;
     font-size: map-get($font-size, xsmall);
+    /*text-align: center;*/
 }
 
 h1, h2, h3{

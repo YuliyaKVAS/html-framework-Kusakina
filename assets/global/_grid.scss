@@ -12,13 +12,8 @@
 [class*="col-"]{
     width:100%;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    border: 1px solid darkslategrey;
-    background-color: lightcyan;
-    text-align: start;
+    border: 1px solid map-get($grid-colors, border-color);
+    background-color: map-get($grid-colors, background-color);
 }
 /*col-sm-i classes*/
 @for $i from 1 through 12{

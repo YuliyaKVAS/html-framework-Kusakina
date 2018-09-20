@@ -1,33 +1,31 @@
+.button{
+    border-radius: $butt-rad;
+    cursor: pointer;
+}
 .button--simple{
     background-color:$butt-simple;
-    border-radius: $butt-rad;
 }
 .button--big{
     background-color:$butt-simple;
-    border-radius: $butt-rad;
     width: map-get($butt-big-param, width);
     height:map-get($butt-big-param, height);;
 }
 .button--small{
     background-color:$butt-simple;
-    border-radius: $butt-rad;
     width:map-get($butt-small-param, width);
     height:map-get($butt-small-param, height);
 }
 .button--primary{
-    border-radius: $butt-rad;
     background-color: $butt-primary;
     border: 1px solid green;
     box-shadow: 1px 1px 1px green;
 }
 .button--secondary{
-    border-radius: $butt-rad;
     background-color: $butt-secondary;
     border: 1px solid green;
     box-shadow: 1px 1px 1px lightgray;
 }
 .button--warning{
-    border-radius: $butt-rad;
     background-color: $butt-warning;
     border: 1px solid orange;
     box-shadow: 1px 1px 1px orangered;

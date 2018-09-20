@@ -1,10 +1,10 @@
-.label--simple{
-    color: darkblue;
+.label{
     font-family: $font;
     font-size: 22px;
 }
+.label--simple{
+    color: darkblue;
+}
 .label--error{
     color: $wrong;
-    font-family: $font;
-    font-size: 22px;
 }

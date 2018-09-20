@@ -1,9 +1,11 @@
 .checkbox--simple{
     background-color: black;
+    cursor: pointer;
 }
 .checkbox--focus:focus{
     background-color: blue;
     outline:5px solid #ffffcc;
+    cursor: pointer;
 }
 .checkbox--error{
     outline:5px solid pink;

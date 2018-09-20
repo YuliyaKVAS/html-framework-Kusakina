@@ -1,7 +1,9 @@
-
+.input{
+    width:16em;
+    border-radius: $input-rad;
+}
 .input--simple{
     background-color: white;
-    border-radius: $input-rad;
 }
 .input--disabled[type="submit"]{
     cursor: not-allowed;
@@ -12,11 +14,9 @@
 .input--error{
     background-color: $background-error;
     border: $border-error;
-    border-radius: $input-rad;
 }
 .input--focus:focus{
     background-color: aquamarine;
-    border-radius: $input-rad;
 }
 
 
