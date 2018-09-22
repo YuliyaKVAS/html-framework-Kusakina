@@ -1,0 +1,18 @@
+p{
+    font-family: $font;
+    font-size: map-get($font-size, xsmall);
+    color: teal;
+    font-weight: 500;
+    line-height: map-get($line-height, p);
+    /*text-align: center;*/
+}
+
+a{
+    color: #c8c8c8;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #1c1c1c;
+    text-decoration: underline;
+}

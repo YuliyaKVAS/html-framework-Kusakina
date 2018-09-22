@@ -53,10 +53,19 @@ body{
 .textarea{
     margin: 6px;
     width: 90%;
-    min-height: 20%;
+    /*min-height: 20%;*/
 }
 hr{
     align-self:center;
     width: 100%;
     color: $wrong;
+}
+
+.box{
+    margin: auto;
+    padding: 10px;
+}
+
+p,h1,h2,h3{
+    margin:16px;
 }

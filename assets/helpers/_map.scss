@@ -1,9 +1,9 @@
 $font-size:(
     xsmall: 20px,
     small: 24px,
-    med: 28px,
-    big: 32px,
-    xbig: 36px
+    med: 32px,
+    big: 36px,
+    xbig: 48px
 );
 
 $butt-big-param:(
@@ -19,4 +19,11 @@ $grid-colors:(
     border-color: darkslategrey,
     background-color: lightcyan
 
+);
+
+$line-height:(
+    p: 24px,
+    h1: 32px,
+    h2:40px,
+    h3:48px
 );

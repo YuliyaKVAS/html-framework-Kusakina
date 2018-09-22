@@ -1,21 +1,21 @@
-p{
-    font-family: $font;
-    font-size: map-get($font-size, xsmall);
-    /*text-align: center;*/
-}
-
 h1, h2, h3{
     font-weight: 500;
     font-family: $font;
-    margin: 2px;
+    text-align: center;
+    /*font-weight: 800;*/
 }
 h1{
     font-size: map-get($font-size, big);
+    color: forestgreen;
+    line-height: map-get($line-height, h1);
+    text-transform: uppercase;
 }
 
 h2{
     font-size: map-get($font-size, med);
+    line-height: map-get($line-height, h2);
 }
 h3{
     font-size: map-get($font-size, small);
+    line-height: map-get($line-height, h3);
 }

@@ -101,6 +101,25 @@ BREAKPOINTS
   color: lightgray;
 }
 
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: teal;
+  font-weight: 500;
+  line-height: 24px;
+  /*text-align: center;*/
+}
+
+a {
+  color: #c8c8c8;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -156,13 +175,22 @@ body {
 .textarea {
   margin: 6px;
   width: 90%;
-  min-height: 20%;
+  /*min-height: 20%;*/
 }
 
 hr {
   align-self: center;
   width: 100%;
   color: #c0392b;
+}
+
+.box {
+  margin: auto;
+  padding: 10px;
+}
+
+p, h1, h2, h3 {
+  margin: 16px;
 }
 
 .flex {
@@ -567,32 +595,32 @@ hr {
   box-shadow: 1px 1px 1px orangered;
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  /*text-align: center;*/
-}
-
 h1, h2, h3 {
   font-weight: 500;
-  font-family: "Times New Roman", Times, serif;
-  margin: 2px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  /*font-weight: 800;*/
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
+  color: forestgreen;
+  line-height: 32px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h3 {
   font-size: 24px;
+  line-height: 48px;
 }
 
 .label {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
 }
 
@@ -606,8 +634,8 @@ h3 {
 
 .box {
   background-color: lightyellow;
-  margin: auto;
-  padding: 10px;
+  border: solid 1px brown;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
