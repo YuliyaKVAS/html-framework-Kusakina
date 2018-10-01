@@ -9,43 +9,42 @@
     <body>
         <div class="container">
             <div class="container__row">
-                <div class="col-md-3 flex">
+                <div class="col-md-3 y-center">
                     <div class="box">
                         <h1>LOGOTYPE</h1>
                     </div>
                 </div>
-                <div class="col-md-9 flex flex-column y-center">
+                <div class="col-md-9 flex-column y-center">
                     <h2>Please enter your details</h2>
-                    <form>
-                        <p><input class="input input--simple" type="text" 
+                    <form class="form">
+                        <div class="input-div"><input class="input input--simple" type="text" 
                             placeholder="Enter your real name.." id="1">
                             <label for="1" class="label label--simple">
                                 Your name*
                             </label>
-                        </p>
-                        <p><input class="input input--simple" type="text" 
+                        </div>
+                        <div class="input-div"><input class="input input--simple" type="text" 
                             placeholder="example@gmail.com" id="2">
                             <label for="2" class="label label--simple">
                                 Your e-mail*
                             </label>
-                        </p>
-                        <p><input class="input input--error" type="text" 
+                        </div>
+                        <div class="input-div"><input class="input input--error" type="text" 
                             placeholder="Wrong password.." id="3">
                             <label for="3" class="label label--error">
                                 Password*
                             </label>
-                        </p>
-                        <p> Message:<br><textarea class="textarea textarea--simple" placeholder="*******">
-                            </textarea>
-                        </p>
-                        <p><input class="checkbox checkbox--simple" type="checkbox" 
+                        </div>
+                        <div class="input-div"><textarea class="textarea textarea--simple" placeholder="Type your message here.."></textarea>
+                        </div>
+                        <div class="input-div"><input class="checkbox checkbox--simple" type="checkbox" 
                             id="4">
                             <label for="4" class="label label--simple">
                             I agree to the processing of personal data
                         </label>
-                        </p>
+                    </div>
                         
-                        <button class="button button--simple">
+                        <button class="button button--simple pull-left">
                             Send message
                         </button>
                     </form>

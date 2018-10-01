@@ -42,31 +42,27 @@ body{
 }
 
 .input{
-    margin: 10px;
-    padding: 2px;
+    margin: 16px;
+    padding: 8px;
 }
 
 .button{
     margin: 8px auto;
-    padding: 4px;
+    padding: 8px;
 }
 
 .textarea{
-    margin: 6px;
+    margin: 16px;
     width: 90%;
+    padding: 8px;
     /*min-height: 20%;*/
-}
-hr{
-    align-self:center;
-    width: 100%;
-    color: $wrong;
 }
 
 .box{
     margin: auto;
-    padding: 10px;
+    padding: 16px;
 }
 
 p,h1,h2,h3{
-    margin:16px;
+    margin:8px;
 }

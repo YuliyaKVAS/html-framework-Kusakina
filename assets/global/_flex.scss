@@ -1,27 +1,33 @@
-.flex{
+%flex{
     display: flex;
 }
 
 .space-between{
+    @extend %flex;
     justify-content: space-between;
 }
 
 .flex-column{
+    @extend %flex;
     flex-direction: column;
 }
 
 .flex-row{
+    @extend %flex;
     flex-direction: row;
 }
 
 .y-center{
+    @extend %flex;
     align-items: center;
 }
 
 .x-start{
+    @extend %flex;
     justify-content: flex-start;
 }
 
 .x-end{
+    @extend %flex;
     justify-content: flex-end;
 }

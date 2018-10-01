@@ -1,5 +1,5 @@
 .input{
-    width:16em;
+    width:50%;
     border-radius: $input-rad;
     outline: none;
 
@@ -38,25 +38,6 @@
 
 }
 
-
-
-/*
-.input--simple{
-    background-color: white;
-}
-.input--disabled[type="submit"]{
-    cursor: not-allowed;
-    }
-.input--readonly[type="text"]{
-    pointer-events: none;
-}
-.input--error{
-    background-color: $background-error;
-    border: $border-error;
-}
-.input--focus:focus{
-    background-color: aquamarine;
-}*/
 
 
 
