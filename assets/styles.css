@@ -474,85 +474,110 @@ p, h1, h2, h3 {
 .input {
   width: 16em;
   border-radius: 5px;
+  outline: none;
 }
-
 .input--simple {
   background-color: white;
 }
-
+.input--simple:-moz-placeholder {
+  color: lightgray;
+}
+.input--simple::-webkit-input-placeholder {
+  color: lightgray;
+}
 .input--disabled[type=submit] {
   cursor: not-allowed;
 }
-
 .input--readonly[type=text] {
   pointer-events: none;
 }
-
 .input--error {
   background-color: pink;
   border: solid 1.5px red;
 }
-
+.input--error:-moz-placeholder {
+  color: #c0392b;
+}
+.input--error::-webkit-input-placeholder {
+  color: #c0392b;
+}
 .input--focus:focus {
   background-color: aquamarine;
 }
 
-.textarea--simple {
+/*
+.input--simple{
+    background-color: white;
+}
+.input--disabled[type="submit"]{
+    cursor: not-allowed;
+    }
+.input--readonly[type="text"]{
+    pointer-events: none;
+}
+.input--error{
+    background-color: $background-error;
+    border: $border-error;
+}
+.input--focus:focus{
+    background-color: aquamarine;
+}*/
+.textarea {
   line-height: 1.5;
   border-radius: 5px;
+}
+.textarea--simple {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px yellowgreen;
 }
-
 .textarea--disabled {
   cursor: not-allowed;
 }
-
 .textarea--focus:focus {
   background-color: aqua;
 }
-
 .textarea--readonly {
   pointer-events: none;
 }
-
 .textarea--error {
   background-color: pink;
   border: solid 1.5px red;
 }
 
+.checkbox {
+  opacity: 0.9;
+  margin: 8px 0 0 8px;
+}
 .checkbox--simple {
   background-color: black;
   cursor: pointer;
 }
-
 .checkbox--focus:focus {
   background-color: blue;
   outline: 5px solid #ffffcc;
   cursor: pointer;
 }
-
 .checkbox--error {
   outline: 5px solid pink;
 }
-
 .checkbox--disabled {
   cursor: not-allowed;
 }
 
+.radio {
+  opacity: 0.9;
+  margin: 8px 0 0 8px;
+}
 .radio--simple {
   background-color: black;
 }
-
 .radio--focus:focus {
   background-color: blue;
   outline: 5px solid #ffffcc;
 }
-
 .radio--error {
   outline: 5px solid pink;
 }
-
 .radio--disabled {
   cursor: not-allowed;
 }
@@ -561,45 +586,39 @@ p, h1, h2, h3 {
   border-radius: 5px;
   cursor: pointer;
 }
-
-/*.button:hover{
-    background-color: blue;
-    color: white;
-}*/
 .button--simple {
   background-color: beige;
 }
-
 .button--big {
   background-color: beige;
   width: 60%;
   height: 40%;
 }
-
 .button--small {
   background-color: beige;
   width: 20%;
   height: 10%;
 }
-
 .button--primary {
   background-color: lightgreen;
   border: 1px solid green;
   box-shadow: 1px 1px 1px green;
 }
-
 .button--secondary {
   background-color: white;
   border: 1px solid green;
   box-shadow: 1px 1px 1px lightgray;
 }
-
 .button--warning {
   background-color: orange;
   border: 1px solid orange;
   box-shadow: 1px 1px 1px orangered;
 }
 
+/*.button:hover{
+    background-color: blue;
+    color: white;
+}*/
 h1, h2, h3 {
   font-weight: 500;
   font-family: "Raleway", sans-serif;
@@ -628,11 +647,9 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
 }
-
 .label--simple {
   color: darkblue;
 }
-
 .label--error {
   color: #c0392b;
 }

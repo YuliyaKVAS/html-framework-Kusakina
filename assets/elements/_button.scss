@@ -1,36 +1,43 @@
 .button{
     border-radius: $butt-rad;
     cursor: pointer;
+
+    &--simple{
+        background-color:$butt-simple;
+    }
+
+    &--big{
+        background-color:$butt-simple;
+        width: 60%;
+        height:40%;
+    }
+
+    &--small{
+        background-color:$butt-simple;
+        width:20%;
+        height:10%;
+    }
+
+    &--primary{
+        background-color: $butt-primary;
+        border: 1px solid green;
+        box-shadow: 1px 1px 1px green;
+    }
+
+    &--secondary{
+        background-color: $butt-secondary;
+        border: 1px solid green;
+        box-shadow: 1px 1px 1px lightgray;
+    }
+
+    &--warning{
+        background-color: $butt-warning;
+        border: 1px solid orange;
+        box-shadow: 1px 1px 1px orangered;
+    }
 }
 /*.button:hover{
     background-color: blue;
     color: white;
 }*/
-.button--simple{
-    background-color:$butt-simple;
-}
-.button--big{
-    background-color:$butt-simple;
-    width: map-get($butt-big-param, width);
-    height:map-get($butt-big-param, height);;
-}
-.button--small{
-    background-color:$butt-simple;
-    width:map-get($butt-small-param, width);
-    height:map-get($butt-small-param, height);
-}
-.button--primary{
-    background-color: $butt-primary;
-    border: 1px solid green;
-    box-shadow: 1px 1px 1px green;
-}
-.button--secondary{
-    background-color: $butt-secondary;
-    border: 1px solid green;
-    box-shadow: 1px 1px 1px lightgray;
-}
-.button--warning{
-    background-color: $butt-warning;
-    border: 1px solid orange;
-    box-shadow: 1px 1px 1px orangered;
-}
+
