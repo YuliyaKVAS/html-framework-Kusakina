@@ -1,0 +1,21 @@
+.radio{
+    opacity: 0.9;
+    margin: 8px 0 0 8px;
+
+    &--simple{
+        background-color: black;
+    }
+
+    &--focus:focus{
+        background-color: blue;
+        outline:5px solid #ffffcc;
+    }
+
+    &--error{
+        outline:5px solid pink;
+    }
+
+    &--disabled{
+        cursor: not-allowed;
+    }
+}

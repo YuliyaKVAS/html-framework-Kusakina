@@ -1,0 +1,12 @@
+.label{
+    font-family: $font;
+    font-size: 22px;
+
+    &--simple{
+        color: darkblue;
+    }
+
+    &--error{
+        color: $wrong;
+    }
+}

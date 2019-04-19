@@ -1,0 +1,35 @@
+.container{
+    width:100%;
+    @include container-width-to(handhels);
+    @include container-width-to(medium-screens);
+    @include container-width-to(wide-screens);
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+[class*="col-"]{
+    width:100%;
+    min-height: 1px;
+    border: 1px solid map-get($grid-colors, border-color);
+    background-color: map-get($grid-colors, background-color);
+}
+/*col-sm-i classes*/
+@for $i from 1 through 12{
+    .col-sm-#{$i} {
+        @include col-(sm,$i);
+    }
+}
+/*col-md-i classes*/
+@for $i from 1 through 12{
+    .col-md-#{$i} {
+        @include col-(md,$i);
+    }
+}
+/*col-lg-i classes*/
+@for $i from 1 through 12{
+    .col-lg-#{$i} {
+        @include col-(lg,$i);
+    }
+}

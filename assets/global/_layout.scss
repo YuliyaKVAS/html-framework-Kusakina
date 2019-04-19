@@ -1,0 +1,68 @@
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    &__row{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 16px;
+    }
+}
+
+[class*="col-"]{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*FLOATS*/
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+body{
+    margin: 8px;
+}
+
+.input{
+    margin: 16px;
+    padding: 8px;
+}
+
+.button{
+    margin: 8px auto;
+    padding: 8px;
+}
+
+.textarea{
+    margin: 16px;
+    width: 90%;
+    padding: 8px;
+    /*min-height: 20%;*/
+}
+
+.box{
+    margin: auto;
+    padding: 16px;
+}
+
+p,h1,h2,h3{
+    margin:8px;
+}

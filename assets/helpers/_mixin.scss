@@ -1,0 +1,38 @@
+/*MIXIN FOR CONTAINER WIDTH*/
+@mixin container-width-to($media) {
+    @if $media == handhels{
+        @media only screen and (max-width: $break-sm){
+            max-width: 720px;
+        }
+    }
+    @else if $media == medium-screens{
+        @media only screen and (min-width: $break-sm + 1) and (max-width: $break-lg - 1){
+            max-width: 960px;
+            
+        }
+    }
+    @else if $media == wide-screens{
+        @media only screen and (min-width: $break-lg){
+            max-width: 1140px;
+        }
+    }
+}
+
+/*MIXIN FOR COLUMNS*/
+@mixin col-($size, $number){
+    @if $size == sm{
+        @media only screen and(min-width: $break-sm){
+            max-width: percentage($number/12);
+        }
+    }
+    @else if $size == md{
+        @media only screen and(min-width: $break-md){
+            max-width: percentage($number/12);
+        }
+    }
+    @else if $size == lg{
+        @media only screen and(min-width: $break-lg){
+            max-width: percentage($number/12);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.input{
+    width:50%;
+    border-radius: $input-rad;
+    outline: none;
+
+    &--simple{
+        background-color: white;
+        &:-moz-placeholder{
+            color: $simple-color;
+        }
+        &::-webkit-input-placeholder {
+            color:$simple-color;
+          }
+    }
+
+    &--disabled[type="submit"]{
+        cursor: not-allowed;
+    }
+
+    &--readonly[type="text"]{
+        pointer-events: none;
+    }
+
+    &--error{
+        background-color: $background-error;
+        border: $border-error;
+        &:-moz-placeholder{
+            color: $wrong;
+        }
+        &::-webkit-input-placeholder {
+            color:$wrong;
+          }
+    }
+
+    &--focus:focus{
+        background-color: aquamarine;
+    }
+
+}
+
+
+
+
